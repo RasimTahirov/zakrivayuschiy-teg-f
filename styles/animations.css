@@ -12,3 +12,133 @@
 
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
+
+@keyframes arrow {
+  0% {
+    transform: translateX(0px);
+  }
+
+  50% {
+    transform: translateX(4px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes focus {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes transparency {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0.6;
+  }
+}
+
+@keyframes shadow {
+  from {
+    box-shadow: 0px 0px 0 var(--shadow-color);
+  }
+
+  to {
+    box-shadow: 2px 2px 0 var(--shadow-color);
+  }
+}
+
+@keyframes increase {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.5);
+  }
+}
+
+@keyframes spark {
+  0% {
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 0.75;
+  }
+
+  50% {
+    opacity: 0;
+  }
+}
+
+.like-icon:hover .core {
+  fill: var(--hover-heart-color);
+  transition: fill 0.3s linear 0.03s;
+}
+
+.like-icon:hover .main-body {
+  fill: var(--hover-heart-color);
+  transition: fill 0.3s linear 0.04s;
+  animation: like 1s;
+}
+
+.like-icon:active .core {
+  fill: var(--active--heart-color);
+  transition: fill 0.3s linear;
+}
+
+.like-icon:active .main-body {
+  fill: var(--active--heart-color);
+  transition: fill 0.3s linear 0.05s;
+}
+
+.like-icon.is-liked .contour:active {
+  fill: var(--active--heart-color);
+  transition: fill 0.3s;
+}
+
+.like-icon.is-liked:active {
+  fill: var(--active--heart-color);
+  transition: fill 0.3s;
+}
+
+.like-icon.is-liked .main-body {
+  fill: var(--active--heart-color);
+  transition: fill 0.3s linear 0.02s;
+}
+
+.like-icon.is-liked .core {
+  fill: var(--active--heart-color);
+  transition: fill 0.3s linear 0.03s;
+}
+
+.like-icon.is-liked .contour {
+  fill: var(--active--heart-color);
+  transition: fill 0.3s linear 0.04s;
+}
+
+.like-icon.is-liked .sparks {
+  transition: fill 0.3s linear 0.5s;
+  animation: spark 0.3s linear 0.5s;
+}
+
+.heart,
+.is-liked {
+  animation: increase 0.1s ease-in-out 0.3s;
+}
+
+.card__icon-button:focus-visible {
+  outline: 2px solid var(--border-color);
+  height: 34px;
+  transition: 0.3s ease;
+}

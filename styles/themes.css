@@ -4,3 +4,51 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+
+:root.theme-dark {
+  --theme-color: #000;
+  --text-color: #00cc14;
+  --border-color: #00cc14;
+  --shadow-color: #00cc14;
+  --btn-text: #00cc14;
+  --background-img: url(/images/background/background-dark.svg);
+  --heart-contour-color: #00cc14;
+  --hover-heart-color: #00cc14;
+}
+
+:root.theme-light {
+  --theme-color: #fff;
+  --text-color: #000;
+  --border-color: #000;
+  --shadow-color: #000;
+  --btn-text: #fff;
+  --background-img: url(/images/background/background-light.svg);
+  --heart-contour-color: #000;
+  --hover-heart-color: #000;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --theme-color: #000;
+    --text-color: #00cc14;
+    --border-color: #00cc14;
+    --shadow-color: #00cc14;
+    --btn-text: #00cc14;
+    --background-img: url(/images/background/background-dark.svg);
+    --heart-contour-color: #00cc14;
+    --hover-heart-color: #00cc14;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --theme-color: #fff;
+    --text-color: #000;
+    --border-color: #000;
+    --shadow-color: #000;
+    --btn-text: #fff;
+    --background-img: url(/images/background/background-light.svg);
+    --heart-contour-color: #000;
+    --hover-heart-color: #000;
+  }
+}

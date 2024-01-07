@@ -1,1 +1,47 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+
+:root {
+    --font-family-accent: "Press Start 2P";
+    --font-family: "Inter";
+    --font-weight-regular: 400;
+    --font-weight-bold: 700;
+    --active--heart-color: #ff0000;
+  }
+
+@media (width <= 375px) {
+  .title {
+    margin-block-start: 120px;
+  }
+
+  .btn__save {
+    display: grid;
+    max-height: 80px;
+    height: 100%;
+    max-width: 306px;
+    width: 100%;
+  }
+
+  .floppy {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+@media (width > 375px) {
+  .title {
+    margin-block-start: 136px;
+  }
+
+  .btn__save {
+    display: flex;
+    max-height: 50px;
+    height: 100%;
+    max-width: 335px;
+    width: 100%;
+  }
+
+  .floppy {
+    width: 21px;
+    height: 21px;
+  }
+}
