@@ -14,6 +14,7 @@
   --background-img: url(/images/background/background-dark.svg);
   --heart-contour-color: #00cc14;
   --hover-heart-color: #00cc14;
+  --label-color: #00cc14;
 }
 
 :root.theme-light {
@@ -25,6 +26,7 @@
   --background-img: url(/images/background/background-light.svg);
   --heart-contour-color: #000;
   --hover-heart-color: #000;
+  --label-color: #000;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -37,6 +39,7 @@
     --background-img: url(/images/background/background-dark.svg);
     --heart-contour-color: #00cc14;
     --hover-heart-color: #00cc14;
+    --label-color: #00cc14;
   }
 }
 
@@ -50,5 +53,6 @@
     --background-img: url(/images/background/background-light.svg);
     --heart-contour-color: #000;
     --hover-heart-color: #000;
+    --label-color: #000;
   }
 }

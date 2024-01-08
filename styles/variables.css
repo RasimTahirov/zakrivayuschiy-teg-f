@@ -1,12 +1,12 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 
 :root {
-    --font-family-accent: "Press Start 2P";
-    --font-family: "Inter";
-    --font-weight-regular: 400;
-    --font-weight-bold: 700;
-    --active--heart-color: #ff0000;
-  }
+  --font-family-accent: "Press Start 2P";
+  --font-family: "Inter-Variable";
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+  --active--heart-color: #ff0000;
+}
 
 @media (width <= 375px) {
   .title {
