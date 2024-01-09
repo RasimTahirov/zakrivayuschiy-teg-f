@@ -288,6 +288,10 @@
   margin-block-end: 105px;
 }
 
+.button__text-dialog {
+  text-transform: uppercase;
+}
+
 .floppy {
   mix-blend-mode: difference;
   color: var(--btn-text);
@@ -379,4 +383,42 @@
 
 .dresden {
   filter: hue-rotate(180deg) saturate(2);
+}
+
+@media (width <= 375px) {
+  .title {
+    margin-block-start: 120px;
+  }
+
+  .btn__save {
+    display: grid;
+    max-height: 80px;
+    height: 100%;
+    max-width: 306px;
+    width: 100%;
+  }
+
+  .floppy {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+@media (width > 375px) {
+  .title {
+    margin-block-start: 136px;
+  }
+
+  .btn__save {
+    display: flex;
+    max-height: 50px;
+    height: 100%;
+    max-width: 335px;
+    width: 100%;
+  }
+
+  .floppy {
+    width: 21px;
+    height: 21px;
+  }
 }

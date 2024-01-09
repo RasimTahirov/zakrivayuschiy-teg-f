@@ -6,42 +6,7 @@
   --font-weight-regular: 400;
   --font-weight-bold: 700;
   --active--heart-color: #ff0000;
-}
-
-@media (width <= 375px) {
-  .title {
-    margin-block-start: 120px;
-  }
-
-  .btn__save {
-    display: grid;
-    max-height: 80px;
-    height: 100%;
-    max-width: 306px;
-    width: 100%;
-  }
-
-  .floppy {
-    width: 28px;
-    height: 28px;
-  }
-}
-
-@media (width > 375px) {
-  .title {
-    margin-block-start: 136px;
-  }
-
-  .btn__save {
-    display: flex;
-    max-height: 50px;
-    height: 100%;
-    max-width: 335px;
-    width: 100%;
-  }
-
-  .floppy {
-    width: 21px;
-    height: 21px;
-  }
+  --heart-main-body-color: #000;
+  --heart-core-color: #000;
+  --sparks-heart-color: #f00;
 }
