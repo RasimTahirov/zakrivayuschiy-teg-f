@@ -11,7 +11,9 @@
   --border-color: #00cc14;
   --shadow-color: #00cc14;
   --btn-text: #00cc14;
-  --background-img: url(../images/background/background-dark.svg);
+  --background-img: repeating-linear-gradient(to right, #000 2px, transparent 7px),
+  repeating-linear-gradient(to bottom, #007f0c 2px, #004306 7px),
+  linear-gradient(to bottom, #007f0c, #004306);
   --heart-contour-color: #00cc14;
   --hover-heart-color: #00cc14;
   --label-color: #00cc14;
@@ -23,7 +25,9 @@
   --border-color: #000;
   --shadow-color: #000;
   --btn-text: #fff;
-  --background-img: url(../images/background/background-light.svg);
+  --background-img: repeating-linear-gradient(to right, #d3d3d3 2px, transparent 7px),
+  repeating-linear-gradient(to bottom, #e7e7e7 2px, #1a1a1a 7px),
+  linear-gradient(to bottom, #e7e7e7 0%, #e7e7e7 0.01%, #1a1a1a 100%);
   --heart-contour-color: #000;
   --hover-heart-color: #000;
   --label-color: #000;
@@ -36,7 +40,9 @@
     --border-color: #00cc14;
     --shadow-color: #00cc14;
     --btn-text: #00cc14;
-    --background-img: url(../images/background/background-dark.svg);
+    --background-img: repeating-linear-gradient(to right, #000 2px, transparent 7px),
+    repeating-linear-gradient(to bottom, #007f0c 2px, #004306 7px),
+    linear-gradient(to bottom, #007f0c, #004306);
     --heart-contour-color: #00cc14;
     --hover-heart-color: #00cc14;
     --label-color: #00cc14;
@@ -50,7 +56,9 @@
     --border-color: #000;
     --shadow-color: #000;
     --btn-text: #fff;
-    --background-img: url(../images/background/background-light.svg);
+    --background-img: repeating-linear-gradient(to right, #d3d3d3 2px, transparent 7px),
+    repeating-linear-gradient(to bottom, #e7e7e7 2px, #1a1a1a 7px),
+    linear-gradient(to bottom, #e7e7e7 0%, #e7e7e7 0.01%, #1a1a1a 100%);
     --heart-contour-color: #000;
     --hover-heart-color: #000;
     --label-color: #000;
